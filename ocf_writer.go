@@ -439,5 +439,4 @@ func writer(fw *Writer, toWrite <-chan *writerBlock) {
 		fw.errors = append(fw.errors, err)
 	}
 	fw.writerDone <- struct{}{}
-	log.Printf("%q", fw.errors)
 }
